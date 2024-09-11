@@ -1,0 +1,76 @@
+{
+    "avg_mteps": 14.455632209777832,
+    "avg_process_time": 3.3961849212646484,
+    "avg_search_depth": 44,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/sssp/../build/bin/sssp -m ../datasets/delaunay_n13/delaunay_n13.mtx --validate --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        49094
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        49094
+    ],
+    "filtered_nodes_visited": [
+        106379
+    ],
+    "filtered_process_times": [
+        3.3961849212646484
+    ],
+    "filtered_search_depths": [
+        44
+    ],
+    "filtered_srcs": [
+        2182
+    ],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/delaunay_n13/delaunay_n13.mtx",
+    "graph_type": "market",
+    "max_mteps": 14.455632209777832,
+    "max_process_time": 3.3961849212646484,
+    "max_search_depth": 44,
+    "min_mteps": 14.455632209777832,
+    "min_process_time": 3.3961849212646484,
+    "min_search_depth": 44,
+    "mteps": [
+        14.455632209777832
+    ],
+    "nodes_visited": [
+        106379
+    ],
+    "num_edges": 49094,
+    "num_vertices": 8192,
+    "primitive": "sssp",
+    "process_times": [
+        3.3961849212646484
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        44
+    ],
+    "srcs": [
+        2182
+    ],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier08049",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Thu Jul 06 18:07:39 2023"
+}

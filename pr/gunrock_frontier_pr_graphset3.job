@@ -1,0 +1,52 @@
+#!/bin/bash
+
+#SBATCH -A GEN150
+
+#SBATCH -J gunrock_frontier_pr_1
+
+#SBATCH  -o gunrock_frontier_pr_1%J.o
+#SBATCH  -e gunrock_frontier_pr_1%J.e
+
+#SBATCH -N 1
+
+#SBATCH -t 02:00:00
+
+##SBATCH -p batch
+
+#SBATCH -q debug
+
+
+module load PrgEnv-cray
+module load rocm
+
+
+#change this directory to frontier_outputs
+cd /lustre/orion/gen150/world-shared/alex-summer23/hip-dev-gunrock/gunrock-hip-develop-performance/pr
+
+
+#srun -N1 -n1 -c1 --gpus=1 -m ../datasets/rgg_n_2_24_s0/rgg_n_2_24_s0.mtx --collect_metrics > rgg_n_2_24_s0_output.txt
+
+current_date=$(date +%Y-%m-%d)
+current_time=$(date +"%H-%M-%S")
+
+#GRAPH_NAME=(chesapeake coAuthorsDBLP hollywood-2009 road_central uk-2002 )
+#GRAPH_NAME=(indochina-2004 road_usa uk-2005 delaunay_n13 kron_g500-logn21 )
+GRAPH_NAME=(soc-LiveJournal1 webbase-1M delaunay_n21 soc-orkut webbase-2001 )
+#GRAPH_NAME=(belgium_osm delaunay_n24 soc-sinaweibo bips98_606 europe_osm )
+#GRAPH_NAME=(soc-twitter-2010 rgg_n_2_24_s0 cit-Patents germany_osm roadNet-CA)
+
+ALGO_NAME=(pr)   
+
+for (( i = 0 ; i < ${#GRAPH_NAME[@]} ; i=$i+1 ))
+do
+        for (( j = 0 ; j < ${#ALGO_NAME[@]} ; j=$j+1 ))
+        do
+                algo=${ALGO_NAME[$j]}
+                GRAPHFILE=${GRAPH_NAME[$i]}/${GRAPH_NAME[$i]}.mtx
+                srun -N1 -n1 -c1 --gpus=1 ../build/bin/${algo} -m ../datasets/${GRAPHFILE} --collect_metrics > {$current_date}{$current_time}_${algo}_${GRAPH_NAME[$i]}.txt
+        done
+done
+
+
+
+

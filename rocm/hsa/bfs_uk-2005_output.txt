@@ -1,0 +1,21 @@
+RPL: on '240827_153421' from '/opt/rocm-5.7.1' in '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm'
+RPL: profiling '"/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--hsa--trace"'
+RPL: input file '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/input.txt'
+RPL: output dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/hsa/rpl_data_240827_153421_572362'
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/hsa/rpl_data_240827_153421_572362/input0_results_240827_153421'
+terminate called after throwing an instance of 'cxxopts::option_not_exists_exception'
+  what():  Option ‘hsa--trace’ does not exist
+/opt/rocm-5.7.1/bin/rocprof: line 300: 572588 Aborted                 "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--hsa--trace"
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/hsa/rpl_data_240827_153421_572362/input1_results_240827_153421'
+terminate called after throwing an instance of 'cxxopts::option_not_exists_exception'
+  what():  Option ‘hsa--trace’ does not exist
+/opt/rocm-5.7.1/bin/rocprof: line 300: 572599 Aborted                 "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--hsa--trace"
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/hsa/rpl_data_240827_153421_572362/input2_results_240827_153421'
+terminate called after throwing an instance of 'cxxopts::option_not_exists_exception'
+  what():  Option ‘hsa--trace’ does not exist
+/opt/rocm-5.7.1/bin/rocprof: line 300: 572609 Aborted                 "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--hsa--trace"
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/hsa/rpl_data_240827_153421_572362/input3_results_240827_153421'
+terminate called after throwing an instance of 'cxxopts::option_not_exists_exception'
+  what():  Option ‘hsa--trace’ does not exist
+/opt/rocm-5.7.1/bin/rocprof: line 300: 572619 Aborted                 "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--hsa--trace"
+File '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/hsa/bfs_uk-2005.csv' is generating

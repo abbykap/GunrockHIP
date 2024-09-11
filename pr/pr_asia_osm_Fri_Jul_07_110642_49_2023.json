@@ -1,0 +1,72 @@
+{
+    "avg_mteps": 10899.6357421875,
+    "avg_process_time": 2.332482099533081,
+    "avg_search_depth": 0,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/pr/../build/bin/pr -m ../datasets/asia_osm/asia_osm.mtx --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        25423206
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        25423206
+    ],
+    "filtered_nodes_visited": [
+        50846412
+    ],
+    "filtered_process_times": [
+        2.332482099533081
+    ],
+    "filtered_search_depths": [
+        0
+    ],
+    "filtered_srcs": [],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/asia_osm/asia_osm.mtx",
+    "graph_type": "market",
+    "max_mteps": 10899.6357421875,
+    "max_process_time": 2.332482099533081,
+    "max_search_depth": 0,
+    "min_mteps": 10899.6357421875,
+    "min_process_time": 2.332482099533081,
+    "min_search_depth": 0,
+    "mteps": [
+        10899.6357421875
+    ],
+    "nodes_visited": [
+        50846412
+    ],
+    "num_edges": 25423206,
+    "num_vertices": 11950757,
+    "primitive": "pr",
+    "process_times": [
+        2.332482099533081
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        0
+    ],
+    "srcs": [],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier05110",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Fri Jul 07 11:06:42 2023"
+}

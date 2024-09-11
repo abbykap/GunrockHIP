@@ -1,0 +1,53 @@
+RPL: on '240827_140629' from '/opt/rocm-5.7.1' in '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm'
+RPL: profiling '"/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--collect_metrics"'
+RPL: input file '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/input.txt'
+RPL: output dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402'
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input0_results_240827_140629'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input0.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  5 metrics
+    Wavefronts, VALUInsts, SALUInsts, SFetchInsts, FlatVMemInsts
+Source : 31306779
+GPU distances[:40] = 13 13 13 13 13 13 12 12 14 14 15 13 13 11 12 12 13 12 13 12 12 12 13 12 13 12 13 13 13 12 13 14 13 13 13 13 13 13 14 13 
+GPU Elapsed Time : 54.732 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input0_results_240827_140629
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input1_results_240827_140629'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input1.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  5 metrics
+    LDSInsts, FlatLDSInsts, GDSInsts, VALUUtilization, FetchSize
+Source : 18894754
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 
+GPU Elapsed Time : 0.593607 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input1_results_240827_140629
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input2_results_240827_140629'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input2.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  6 metrics
+    WriteSize, L2CacheHit, VWriteInsts, GPUBusy, VALUBusy, SALUBusy
+Source : 27385758
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 
+GPU Elapsed Time : 0.394564 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input2_results_240827_140629
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input3_results_240827_140629'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input3.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  4 metrics
+    MemUnitStalled, WriteUnitStalled, LDSBankConflict, MemUnitBusy
+Source : 32262602
+GPU distances[:40] = 20 20 20 20 20 20 19 19 21 21 22 20 20 18 19 19 20 19 20 19 19 19 20 19 20 19 20 20 20 19 20 19 18 20 20 20 20 20 21 20 
+GPU Elapsed Time : 54.0498 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input3_results_240827_140629
+File '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/bfs_uk-2005.csv' is generating

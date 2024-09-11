@@ -1,0 +1,53 @@
+RPL: on '240909_122811' from '/opt/rocm-5.7.1' in '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm'
+RPL: profiling '"/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx"'
+RPL: input file 'input.txt'
+RPL: output dir '/tmp/rpl_data_240909_122811_183589'
+RPL: result dir '/tmp/rpl_data_240909_122811_183589/input0_results_240909_122811'
+ROCProfiler: input from "/tmp/rpl_data_240909_122811_183589/input0.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  5 metrics
+    Wavefronts, VALUInsts, SALUInsts, SFetchInsts, FlatVMemInsts
+Source : 18399853
+GPU distances[:40] = 16 16 16 16 16 16 15 15 17 17 18 16 16 14 15 15 16 15 16 15 15 15 16 15 16 15 16 16 16 15 16 14 14 12 12 12 12 12 13 12 
+GPU Elapsed Time : 53.385 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /tmp/rpl_data_240909_122811_183589/input0_results_240909_122811
+RPL: result dir '/tmp/rpl_data_240909_122811_183589/input1_results_240909_122811'
+ROCProfiler: input from "/tmp/rpl_data_240909_122811_183589/input1.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  5 metrics
+    LDSInsts, FlatLDSInsts, GDSInsts, VALUUtilization, FetchSize
+Source : 12282799
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 2147483647 
+GPU Elapsed Time : 0.399361 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /tmp/rpl_data_240909_122811_183589/input1_results_240909_122811
+RPL: result dir '/tmp/rpl_data_240909_122811_183589/input2_results_240909_122811'
+ROCProfiler: input from "/tmp/rpl_data_240909_122811_183589/input2.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  6 metrics
+    WriteSize, L2CacheHit, VWriteInsts, GPUBusy, VALUBusy, SALUBusy
+Source : 20722072
+GPU distances[:40] = 17 17 17 17 17 17 16 16 18 18 19 17 17 15 16 16 17 16 17 16 16 16 17 16 17 16 17 17 17 16 17 17 16 18 18 18 18 18 19 18 
+GPU Elapsed Time : 54.0592 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /tmp/rpl_data_240909_122811_183589/input2_results_240909_122811
+RPL: result dir '/tmp/rpl_data_240909_122811_183589/input3_results_240909_122811'
+ROCProfiler: input from "/tmp/rpl_data_240909_122811_183589/input3.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  4 metrics
+    MemUnitStalled, WriteUnitStalled, LDSBankConflict, MemUnitBusy
+Source : 28570310
+GPU distances[:40] = 16 16 16 16 16 16 15 15 17 17 18 16 16 14 15 15 16 15 16 15 15 15 16 15 16 15 16 16 16 15 16 13 14 14 14 14 14 14 15 14 
+GPU Elapsed Time : 54.7104 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /tmp/rpl_data_240909_122811_183589/input3_results_240909_122811
+File '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/rocminputmonday/bfs_uk-2005_stats.csv' is generating

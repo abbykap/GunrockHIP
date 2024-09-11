@@ -1,0 +1,14 @@
+RPL: on '240827_163714' from '/opt/rocm-5.7.1' in '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm'
+RPL: profiling '"/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2002.mtx"'
+RPL: input file ''
+RPL: output dir '/tmp/rpl_data_240827_163714_583371'
+RPL: result dir '/tmp/rpl_data_240827_163714_583371/input_results_240827_163714'
+ROCProfiler: input from "/tmp/rpl_data_240827_163714_583371/input.xml"
+  0 metrics
+Source : 11365909
+GPU distances[:40] = 14 14 12 13 15 15 16 14 14 13 13 13 13 13 13 13 13 14 14 14 14 14 13 13 13 14 14 14 14 14 14 14 14 14 13 14 14 14 12 13 
+GPU Elapsed Time : 20.5777 (ms)
+
+ROCPRofiler: 184 contexts collected, output directory /tmp/rpl_data_240827_163714_583371/input_results_240827_163714
+File '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/stats2/bfs_uk-2002_stats.csv' is generating
+File '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/stats2/bfs_uk-2002_stats.stats.csv' is generating

@@ -1,0 +1,5 @@
+Per-vertex triangle count[:40] = 5 4 6 6 13 7 6 8 8 4 6 4 6 6 5 6 5 7 7 7 6 6 8 9 7 5 5 8 5 4 5 6 5 8 6 5 6 4 5 3 
+GPU Elapsed Time : 1.74465 (ms)
+Error: Total TC mismatch: 0! = 12655158
+CPU Elapsed Time : 338.961 (ms)
+Number of errors : 1

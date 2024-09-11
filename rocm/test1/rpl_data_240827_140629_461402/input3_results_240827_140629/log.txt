@@ -1,0 +1,11 @@
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input3.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  4 metrics
+    MemUnitStalled, WriteUnitStalled, LDSBankConflict, MemUnitBusy
+Source : 32262602
+GPU distances[:40] = 20 20 20 20 20 20 19 19 21 21 22 20 20 18 19 19 20 19 20 19 19 19 20 19 20 19 20 20 20 19 20 19 18 20 20 20 20 20 21 20 
+GPU Elapsed Time : 54.0498 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input3_results_240827_140629

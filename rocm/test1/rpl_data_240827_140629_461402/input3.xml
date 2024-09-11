@@ -1,0 +1,3 @@
+# 240827_140631 '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240827_140629_461402/input3.xml' generated with '/opt/rocm-5.7.1/libexec/rocprofiler/txt2xml.sh 1'
+<metric range="0:1" kernel="" gpu_index="0"></metric>
+<metric name=MemUnitStalled,WriteUnitStalled,LDSBankConflict,MemUnitBusy ></metric>

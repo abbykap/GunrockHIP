@@ -1,0 +1,76 @@
+{
+    "avg_mteps": 0.00549203110858798,
+    "avg_process_time": 0.18208199739456177,
+    "avg_search_depth": 1,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/frontier_outputs/../build/bin/bfs -m ../datasets/bips98_606/bips98_606.mtx --validate --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        1
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        1
+    ],
+    "filtered_nodes_visited": [
+        2
+    ],
+    "filtered_process_times": [
+        0.18208199739456177
+    ],
+    "filtered_search_depths": [
+        1
+    ],
+    "filtered_srcs": [
+        1115
+    ],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/bips98_606/bips98_606.mtx",
+    "graph_type": "market",
+    "max_mteps": 0.00549203110858798,
+    "max_process_time": 0.18208199739456177,
+    "max_search_depth": 1,
+    "min_mteps": 0.00549203110858798,
+    "min_process_time": 0.18208199739456177,
+    "min_search_depth": 1,
+    "mteps": [
+        0.00549203110858798
+    ],
+    "nodes_visited": [
+        2
+    ],
+    "num_edges": 34738,
+    "num_vertices": 7135,
+    "primitive": "bfs",
+    "process_times": [
+        0.18208199739456177
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        1
+    ],
+    "srcs": [
+        1115
+    ],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier09085",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Wed Jun 21 09:43:05 2023"
+}

@@ -1,0 +1,3 @@
+terminate called after throwing an instance of 'cxxopts::option_not_exists_exception'
+  what():  Option ‘hip--trace’ does not exist
+/opt/rocm-5.7.1/bin/rocprof: line 300: 468114 Aborted                 "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/uk-2005.mtx" "--hip--trace"

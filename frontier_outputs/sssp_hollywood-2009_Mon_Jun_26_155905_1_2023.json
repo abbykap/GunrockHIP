@@ -1,0 +1,76 @@
+{
+    "avg_mteps": 7499.8291015625,
+    "avg_process_time": 15.158002853393555,
+    "avg_search_depth": 8,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/frontier_outputs/../build/bin/sssp -m ../datasets/hollywood-2009/hollywood-2009.mtx --validate --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        113682432
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        113682432
+    ],
+    "filtered_nodes_visited": [
+        228433989
+    ],
+    "filtered_process_times": [
+        15.158002853393555
+    ],
+    "filtered_search_depths": [
+        8
+    ],
+    "filtered_srcs": [
+        487307
+    ],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/hollywood-2009/hollywood-2009.mtx",
+    "graph_type": "market",
+    "max_mteps": 7499.8291015625,
+    "max_process_time": 15.158002853393555,
+    "max_search_depth": 8,
+    "min_mteps": 7499.8291015625,
+    "min_process_time": 15.158002853393555,
+    "min_search_depth": 8,
+    "mteps": [
+        7499.8291015625
+    ],
+    "nodes_visited": [
+        228433989
+    ],
+    "num_edges": 113891327,
+    "num_vertices": 1139905,
+    "primitive": "sssp",
+    "process_times": [
+        15.158002853393555
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        8
+    ],
+    "srcs": [
+        487307
+    ],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier00127",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Mon Jun 26 15:59:05 2023"
+}

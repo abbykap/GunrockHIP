@@ -1,0 +1,72 @@
+{
+    "avg_mteps": 21327.330078125,
+    "avg_process_time": 37.38111114501953,
+    "avg_search_depth": 6,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/pr/../build/bin/pr -m ../datasets/hollywood-2009/hollywood-2009.mtx --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        797239289
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        797239289
+    ],
+    "filtered_nodes_visited": [
+        1594478578
+    ],
+    "filtered_process_times": [
+        37.38111114501953
+    ],
+    "filtered_search_depths": [
+        6
+    ],
+    "filtered_srcs": [],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/hollywood-2009/hollywood-2009.mtx",
+    "graph_type": "market",
+    "max_mteps": 21327.330078125,
+    "max_process_time": 37.38111114501953,
+    "max_search_depth": 6,
+    "min_mteps": 21327.330078125,
+    "min_process_time": 37.38111114501953,
+    "min_search_depth": 6,
+    "mteps": [
+        21327.330078125
+    ],
+    "nodes_visited": [
+        1594478578
+    ],
+    "num_edges": 113891327,
+    "num_vertices": 1139905,
+    "primitive": "pr",
+    "process_times": [
+        37.38111114501953
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        6
+    ],
+    "srcs": [],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier00636",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Fri Jul 07 11:24:31 2023"
+}

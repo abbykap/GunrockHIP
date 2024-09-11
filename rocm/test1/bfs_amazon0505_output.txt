@@ -1,0 +1,53 @@
+RPL: on '240823_125003' from '/opt/rocm-5.7.1' in '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm'
+RPL: profiling '"/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/bfs" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/amazon0505_with_weights.mtx" "--collect_metrics"'
+RPL: input file '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/input.txt'
+RPL: output dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823'
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input0_results_240823_125003'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input0.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  5 metrics
+    Wavefronts, VALUInsts, SALUInsts, SFetchInsts, FlatVMemInsts
+Source : 211733
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 8 9 8 7 12 10 8 18 9 11 11 19 15 10 19 11 17 13 10 10 10 11 9 9 7 10 2147483647 2147483647 21 10 11 9 10 9 9 9 
+GPU Elapsed Time : 2.99123 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input0_results_240823_125003
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input1_results_240823_125003'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input1.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  5 metrics
+    LDSInsts, FlatLDSInsts, GDSInsts, VALUUtilization, FetchSize
+Source : 317639
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 9 9 8 8 14 10 9 18 10 11 11 19 15 12 19 11 17 14 10 11 10 12 10 9 9 11 2147483647 2147483647 20 11 12 10 10 8 9 8 
+GPU Elapsed Time : 2.80802 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input1_results_240823_125003
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input2_results_240823_125003'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input2.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  6 metrics
+    WriteSize, L2CacheHit, VWriteInsts, GPUBusy, VALUBusy, SALUBusy
+Source : 211126
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 8 8 7 7 12 9 8 17 9 11 11 18 14 10 18 11 16 13 10 10 9 11 10 8 8 10 2147483647 2147483647 21 11 11 9 9 7 8 7 
+GPU Elapsed Time : 2.84674 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input2_results_240823_125003
+RPL: result dir '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input3_results_240823_125003'
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input3.xml"
+  gpu_index = 0
+  kernel = 
+  range = 0:1
+  4 metrics
+    MemUnitStalled, WriteUnitStalled, LDSBankConflict, MemUnitBusy
+Source : 265002
+GPU distances[:40] = 2147483647 2147483647 2147483647 2147483647 9 9 7 8 11 9 8 18 9 11 10 19 15 11 19 11 17 11 10 9 9 11 9 8 7 10 2147483647 2147483647 20 9 10 10 9 9 9 8 
+GPU Elapsed Time : 2.8597 (ms)
+
+ROCPRofiler: 1 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/rpl_data_240823_125003_320823/input3_results_240823_125003
+File '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/test1/bfs_amazon0505.csv' is generating

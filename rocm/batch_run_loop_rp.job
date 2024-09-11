@@ -1,0 +1,80 @@
+#!/bin/bash
+
+#SBATCH -A STF218
+
+#SBATCH -J bfs_top_down_single
+
+#SBATCH  -o bfs_top_down_single%J.o
+#SBATCH  -e bfs_top_down_single%J.e
+
+#SBATCH -N 1
+
+#SBATCH -t 00:30:00
+
+##SBATCH -p batch
+#SBATCH -q debug
+
+module load PrgEnv-cray
+module load rocm
+
+cd /lustre/orion/stf218/scratch/nsattar/graph500/2024-july-code/32-bit-working/
+
+working_dir=/lustre/orion/stf218/scratch/nsattar/graph500/2024-july-code/32-bit-working/
+
+data_dir=${working_dir}rp_data/
+
+
+input=${working_dir}input.txt
+
+GRAPH_DIR=/lustre/orion/stf218/scratch/nsattar/graph500/code-crusher/datasets/
+current_date=$(date +%Y-%m-%d)
+current_time=$(date +"%H-%M-%S")
+
+#loop with entire jsun command
+
+#(coAuthorsDBLP hollywood-2009 road_central uk-2002 common.mk indochina-2004 road_usa uk-2005 delaunay_n13 kron_g500-logn21 soc-LiveJournal1 webbase-1M delaunay_n21 soc-orkut webbase-2001 belgium_osm delaunay_n24 soc-sinaweibo bips98_606 europe_osm soc-twitter-2010 geolocation rgg_n_2_24_s0 spgemm cit-Patents germany_osm roadNet-CA)
+
+#GRAPH_NAME=(chesapeake coAuthorsDBLP hollywood-2009 road_central uk-2002 indochina-2004 road_usa uk-2005 delaunay_n13 kron_g500-logn21 soc-LiveJournal1 webbase-1M delaunay_n21 soc-orkut webbase-2001 belgium_osm delaunay_n24 soc-sinaweibo bips98_606 europe_osm soc-twitter-2010 rgg_n_2_24_s0 cit-Patents germany_osm roadNet-CA)
+
+#GRAPH_NAME=(chesapeake)
+#road_usa
+GRAPH_NAME=(kron_g500-logn21 rgg_n_2_24_s0 )
+#GRAPH_NAME=(GAP-kron)
+#GRAPH_NAME=(ak2010 arabic-2005 asia_osm belgium_osm bips98_606 chesapeake cit-Patents coAuthorsDBLP delaunay_n13 delaunay_n21 delaunay_n24 europe_osm germany_osm hollywood-2009 indochina-2004 kron_g500-logn21 rgg_n_2_24_s0 road_central road_usa roadNet-CA soc-LiveJournal1 soc-orkut soc-sinaweibo soc-twitter-2010 uk-2002 uk-2005 webbase-1M webbase-2001)
+
+
+
+THREAD_BLK=(256 512 1024)
+
+#THREAD_BLK=(256)
+
+#ALGO_NAME=(bfs sssp)   
+
+
+
+#GRAPH_DIR=/lustre/orion/stf218/scratch/nsattar/graph500/input_graphchallenge/
+#GRAPH_NAME=(graph500-scale18-ef16)
+#GRAPH_NAME=(graph500-scale19-ef16 graph500-scale20-ef16 graph500-scale21-ef16 graph500-scale22-ef16 graph500-scale23-ef16 graph500-scale24-ef16 graph500-scale25-ef16)
+
+
+
+for (( i = 0 ; i < ${#GRAPH_NAME[@]} ; i=$i+1 ))
+do
+        for (( j = 0 ; j < ${#THREAD_BLK[@]} ; j=$j+1 ))
+        do
+                BLKSZ=${THREAD_BLK[$j]}
+                GRAPHFILE=${GRAPH_NAME[$i]}/${GRAPH_NAME[$i]}.mtx
+
+                #GRAPHFILE=${GRAPH_NAME[$i]}/${GRAPH_NAME[$i]}_adj.mmio
+
+                #running
+                rocprof -d ${data_dir} -o {$current_date}{$current_time}_${SLURM_JOBID}_b${BLKSZ}_smax_${GRAPH_NAME[$i]}.csv -i $input ./src/bfs_top_down_gpu_single ${GRAPH_DIR}${GRAPHFILE} 0 $BLKSZ max > ./output/{$current_date}{$current_time}_b${BLKSZ}_smax_${GRAPH_NAME[$i]}_output.txt
+                rocprof -d ${data_dir} -o {$current_date}{$current_time}_${SLURM_JOBID}_b${BLKSZ}_s0_${GRAPH_NAME[$i]}.csv -i $input ./src/bfs_top_down_gpu_single ${GRAPH_DIR}${GRAPHFILE} 0 $BLKSZ zero > ./output/{$current_date}{$current_time}_b${BLKSZ}_s0_${GRAPH_NAME[$i]}_output.txt
+
+                 #running
+                #srun -N1 -n1 -c1 --gpus=1 ./src/bfs_top_down_gpu_single ${GRAPH_DIR}${GRAPHFILE} 0 $BLKSZ max > ./output/{$current_date}{$current_time}_b${BLKSZ}_smax_${GRAPH_NAME[$i]}_output.txt
+		#srun -N1 -n1 -c1 --gpus=1 ./src/bfs_top_down_gpu_single ${GRAPH_DIR}${GRAPHFILE} 0 $BLKSZ zero > ./output/{$current_date}{$current_time}_b${BLKSZ}_szero_${GRAPH_NAME[$i]}_output.txt
+
+        done
+done
+

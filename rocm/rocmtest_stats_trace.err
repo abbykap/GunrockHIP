@@ -1,0 +1,11 @@
+
+Lmod is automatically replacing "gcc/12.2.0" with "gcc-native/12.3".
+
+
+Activating Modules:
+  1) darshan-runtime/3.4.0-mpi
+
+The following have been reloaded with a version change:
+  1) cray-libsci/23.09.1.1 => cray-libsci/23.12.5
+  2) cray-mpich/8.1.27 => cray-mpich/8.1.28
+

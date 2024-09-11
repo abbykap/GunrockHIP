@@ -1,0 +1,5 @@
+GPU distances[:40] = 3 4 3 3 4 3 4 4 4 4 3 4 5 4 5 3 3 4 4 4 3 4 3 3 3 3 3 4 3 3 3 3 3 3 4 4 3 4 3 4 
+GPU Elapsed Time : 237.027 (ms)
+CPU Distances[:40] = 3 4 3 3 4 3 4 4 4 4 3 4 5 4 5 3 3 4 4 4 3 4 3 3 3 3 3 4 3 3 3 3 3 3 4 4 3 4 3 4 
+CPU Elapsed Time : 18302.3 (ms)
+Number of errors : 0

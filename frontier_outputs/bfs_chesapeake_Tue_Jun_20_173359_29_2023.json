@@ -1,0 +1,76 @@
+{
+    "avg_mteps": 1.1580262184143066,
+    "avg_process_time": 0.29360300302505493,
+    "avg_search_depth": 3,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/frontier_outputs/../build/bin/bfs -m ../datasets/chesapeake/chesapeake.mtx --validate --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        340
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        340
+    ],
+    "filtered_nodes_visited": [
+        680
+    ],
+    "filtered_process_times": [
+        0.29360300302505493
+    ],
+    "filtered_search_depths": [
+        3
+    ],
+    "filtered_srcs": [
+        22
+    ],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/chesapeake/chesapeake.mtx",
+    "graph_type": "market",
+    "max_mteps": 1.1580262184143066,
+    "max_process_time": 0.29360300302505493,
+    "max_search_depth": 3,
+    "min_mteps": 1.1580262184143066,
+    "min_process_time": 0.29360300302505493,
+    "min_search_depth": 3,
+    "mteps": [
+        1.1580262184143066
+    ],
+    "nodes_visited": [
+        680
+    ],
+    "num_edges": 340,
+    "num_vertices": 39,
+    "primitive": "bfs",
+    "process_times": [
+        0.29360300302505493
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        3
+    ],
+    "srcs": [
+        22
+    ],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier07418",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Tue Jun 20 17:33:59 2023"
+}

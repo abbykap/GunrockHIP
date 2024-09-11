@@ -1,0 +1,76 @@
+{
+    "avg_mteps": 32.05349349975586,
+    "avg_process_time": 96.71145629882813,
+    "avg_search_depth": 1570,
+    "command_line": "/lustre/orion/gen150/world-shared/alex-summer23/gunrock_hip_develop/gunrock-hip-develop/frontier_outputs/../build/bin/bfs -m ../datasets/belgium_osm/belgium_osm.mtx --validate --collect_metrics",
+    "compiler": "Clang",
+    "compiler_version": "150000000",
+    "edges_visited": [
+        3099940
+    ],
+    "engine": "Essentials",
+    "filtered_edges_visited": [
+        3099940
+    ],
+    "filtered_nodes_visited": [
+        6199880
+    ],
+    "filtered_process_times": [
+        96.71145629882813
+    ],
+    "filtered_search_depths": [
+        1570
+    ],
+    "filtered_srcs": [
+        101696
+    ],
+    "git_commit_sha": "GITDIR-NOTFOUND",
+    "gpuinfo": {
+        "clock_rate": "1700000",
+        "compute_version": "90",
+        "driver_version": "50322061",
+        "major": "9",
+        "minor": "0",
+        "multi_processor_count": "110",
+        "name": "",
+        "runtime_version": "50322061",
+        "total_global_mem": "4278190080"
+    },
+    "graph_file": "../datasets/belgium_osm/belgium_osm.mtx",
+    "graph_type": "market",
+    "max_mteps": 32.05349349975586,
+    "max_process_time": 96.71145629882813,
+    "max_search_depth": 1570,
+    "min_mteps": 32.05349349975586,
+    "min_process_time": 96.71145629882813,
+    "min_search_depth": 1570,
+    "mteps": [
+        32.05349349975586
+    ],
+    "nodes_visited": [
+        6199880
+    ],
+    "num_edges": 3099940,
+    "num_vertices": 1441295,
+    "primitive": "bfs",
+    "process_times": [
+        96.71145629882813
+    ],
+    "schema": "2022-10-28",
+    "search_depths": [
+        1570
+    ],
+    "srcs": [
+        101696
+    ],
+    "stddev_process_time": null,
+    "sysinfo": {
+        "machine": "x86_64",
+        "nodename": "frontier09085",
+        "release": "5.14.21-150400.24.46_12.0.72-cray_shasta_c",
+        "sysname": "Linux",
+        "version": "#1 SMP Thu May 4 03:49:17 UTC 2023 (7c7b442)"
+    },
+    "tags": [],
+    "time": "Wed Jun 21 09:39:03 2023"
+}

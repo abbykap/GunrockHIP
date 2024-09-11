@@ -1,0 +1,7 @@
+dispatch[0], gpu-id(4), queue-id(0), queue-index(0), pid(461805), tid(461805), grd(39460096), wgr(256), lds(0), scr(0), arch_vgpr(8), accum_vgpr(0), sgpr(16), wave_size(64), sig(0x0), obj(0x7ffdc324ecc0), kernel-name("void thrust::hip_rocprim::__parallel_for::kernel<256u, thrust::hip_rocprim::__transform::unary_transform_f<thrust::detail::normal_iterator<thrust::device_ptr<int const> >, thrust::device_ptr<int>, thrust::hip_rocprim::__transform::no_stencil_tag, thrust::identity<int>, thrust::hip_rocprim::__transform::always_true_predicate>, long, 1u>(thrust::hip_rocprim::__transform::unary_transform_f<thrust::detail::normal_iterator<thrust::device_ptr<int const> >, thrust::device_ptr<int>, thrust::hip_rocprim::__transform::no_stencil_tag, thrust::identity<int>, thrust::hip_rocprim::__transform::always_true_predicate>, long, long) [clone .kd]")
+  WriteSize (154140.3437500000)
+  L2CacheHit (34.5704847334)
+  VWriteInsts (0.0000000000)
+  GPUBusy (100.0000000000)
+  VALUBusy (17.9925752031)
+  SALUBusy (15.2245240080)

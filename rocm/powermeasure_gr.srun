@@ -1,0 +1,66 @@
+#!/bin/bash
+#SBATCH -A STF218
+#SBATCH -p batch
+#SBATCH -t 8:00:00
+#SBATCH -N 1
+#SBATCH -J grw
+#SBATCH -o %x-%j.out
+#SBATCH -e %x-%j.err
+##
+
+module load PrgEnv-cray
+module load amd-mixed
+module load craype-accel-amd-gfx90a
+module load cray-mpich 
+export MPICH_GPU_SUPPORT_ENABLED=1
+
+
+STORAGE=/lustre/orion/stf218/scratch/nsattar/louvaingpu/
+DATADIR=${STORAGE}datasets/
+GRAPH_DIR=${DATADIR}mtx
+#GRAPH_NAME=(soc-LiveJournal1 soc-orkut soc-sinaweibo soc-twitter-2010 uk-2002 uk-2005 webbase-1M webbase-2001)
+GRAPH_NAME=(soc-sinaweibo)  
+#GRAPH_NAME=(soc-LiveJournal1) 
+
+current_date=$(date +%Y-%m-%d)
+current_time=$(date +"%H-%M-%S")
+
+cd /lustre/orion/stf218/scratch/nsattar/graph500/sota/gunrock/hip-dev-gunrock/gunrock-hip-develop-performance/crusher_outputs/run_3col
+
+
+for (( i = 0 ; i < ${#GRAPH_NAME[@]} ; i=$i+1 ))
+do
+    GRAPHFILE=${GRAPH_DIR}/${GRAPH_NAME[$i]}/${GRAPH_NAME[$i]}
+    #srun -N1 -n1 -c1 --gpus=1 ../../build/bin/bfs -m ${GRAPHFILE}.mtx -s 12759256 --collect_metrics > {$current_date}{$current_time}_${GRAPH_NAME[$i]}_output.txt
+    #MY_SRUN_COMMAND="srun -W5 -N1 -n$MPITASKS -c1 --cpu-bind=threads --threads-per-core=1 -m block:cyclic --gpus-per-task=1 --gpu-bind=closest"
+    MY_SRUN_COMMAND="srun -N1 -n1 -c1 --gpus=1"
+
+
+    #$MY_SRUN_COMMAND /ccs/home/maiterth/Repositories/IntensityTriggerBench/double.varAI.$AI &
+    $MY_SRUN_COMMAND ../../build/bin/bfs -m ${GRAPHFILE}.mtx -s 12759256 --collect_metrics > {$current_date}{$current_time}_${GRAPH_NAME[$i]}_output.txt &
+    TEST_PID=$!
+    if [ $SLURM_NODEID -eq 0 ]; then
+      while kill -0 $TEST_PID &>/dev/null
+      do
+        #rocm-smi | awk 'NR > 8 { for (i=1; i<=NF; i++) { printf "%s%s", $i, (i==NF?ORS:OFS) } }' >> {$current_date}{$current_time}_${GRAPH_NAME[$i]}_rocm-smi.csv
+        
+        #--csv dont work for concise outputs
+        #rocm-smi --csv  >> {$current_date}{$current_time}_${GRAPH_NAME[$i]}_rocm-smi.csv
+       
+        #working
+        #rocm-smi | awk 'NR > 8 {print $1 "," $3}'| sed '$d' | sed '$d' >> ${SLURM_JOB_NAME}_rocm-smi.csv
+        #working
+        #rocm-smi --csv -a | awk -F ',' '{print $12 "," $23 "," $24}' >> {$current_date}{$current_time}_${GRAPH_NAME[$i]}_rocm-smi.csv
+
+        rocm-smi --csv -a | awk -F ',' 'NR > 3  {print $12 "," $23 "," $24}' | sed '$d'>> ${SLURM_JOB_NAME}_rocm-smi.out 
+        
+
+        #rocm-smi --csv -a >> {$current_date}{$current_time}_${GRAPH_NAME[$i]}_rocm-smi.out 
+        sleep 1;
+      done
+    fi
+done
+
+
+
+

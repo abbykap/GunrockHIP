@@ -1,0 +1,5 @@
+pmc : Wavefronts, VALUInsts, SALUInsts, SFetchInsts,FlatVMemInsts,
+pmc: LDSInsts, FlatLDSInsts, GDSInsts, VALUUtilization, FetchSize,
+pmc: WriteSize, L2CacheHit, VWriteInsts, GPUBusy, VALUBusy, SALUBusy,
+pmc: MemUnitStalled, WriteUnitStalled, LDSBankConflict, MemUnitBusy
+gpu: 0

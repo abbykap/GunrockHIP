@@ -1,0 +1,53 @@
+/var/spool/slurmd/job2085577/slurm_script: line 11: ./bin/sssp: No such file or directory
+
+
+======================= ROCm System Management Interface =======================
+============================== Power Consumption ===============================
+GPU[0]		: Average Graphics Package Power (W): 87.0
+Not supported on the given system
+GPU[1]		: Not supported on the given system
+GPU[1]		: Not supported on the given system
+GPU[1]		: Average Graphics Package Power (W): N/A
+GPU[2]		: Average Graphics Package Power (W): 88.0
+Not supported on the given system
+GPU[3]		: Not supported on the given system
+GPU[3]		: Not supported on the given system
+GPU[3]		: Average Graphics Package Power (W): N/A
+GPU[4]		: Average Graphics Package Power (W): 90.0
+Not supported on the given system
+GPU[5]		: Not supported on the given system
+GPU[5]		: Not supported on the given system
+GPU[5]		: Average Graphics Package Power (W): N/A
+GPU[6]		: Average Graphics Package Power (W): 93.0
+Not supported on the given system
+GPU[7]		: Not supported on the given system
+GPU[7]		: Not supported on the given system
+GPU[7]		: Average Graphics Package Power (W): N/A
+================================================================================
+============================= End of ROCm SMI Log ==============================
+
+
+======================= ROCm System Management Interface =======================
+============================== Power Consumption ===============================
+GPU[0]		: Average Graphics Package Power (W): 87.0
+Not supported on the given system
+GPU[1]		: Not supported on the given system
+GPU[1]		: Not supported on the given system
+GPU[1]		: Average Graphics Package Power (W): N/A
+GPU[2]		: Average Graphics Package Power (W): 88.0
+Not supported on the given system
+GPU[3]		: Not supported on the given system
+GPU[3]		: Not supported on the given system
+GPU[3]		: Average Graphics Package Power (W): N/A
+GPU[4]		: Average Graphics Package Power (W): 90.0
+Not supported on the given system
+GPU[5]		: Not supported on the given system
+GPU[5]		: Not supported on the given system
+GPU[5]		: Average Graphics Package Power (W): N/A
+GPU[6]		: Average Graphics Package Power (W): 93.0
+Not supported on the given system
+GPU[7]		: Not supported on the given system
+GPU[7]		: Not supported on the given system
+GPU[7]		: Average Graphics Package Power (W): N/A
+================================================================================
+============================= End of ROCm SMI Log ==============================

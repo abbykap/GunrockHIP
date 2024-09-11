@@ -1,0 +1,3 @@
+# 240827_153534 '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/stats/rpl_data_240827_153533_418548/input0.xml' generated with '/opt/rocm-5.7.1/libexec/rocprofiler/txt2xml.sh 1'
+<metric range="0:1" kernel="" gpu_index="0"></metric>
+<metric name=Wavefronts,VALUInsts,SALUInsts,SFetchInsts,FlatVMemInsts ></metric>
