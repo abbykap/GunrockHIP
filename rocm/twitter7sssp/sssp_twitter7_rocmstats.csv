@@ -1,0 +1,49 @@
+RPL: on '240912_134455' from '/opt/rocm-5.7.1' in '/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm'
+RPL: profiling '"/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/build/bin/sssp" "-m" "/lustre/orion/gen150/world-shared/abby-summer24/nawsdatasets/twitter7/twitter7.mtx"'
+RPL: input file 'input.txt'
+RPL: output dir '/tmp/rpl_data_240912_134455_422039'
+RPL: result dir '/tmp/rpl_data_240912_134455_422039/input0_results_240912_134455'
+ROCProfiler: input from "/tmp/rpl_data_240912_134455_422039/input0.xml"
+  gpu_index = 0
+  kernel = 
+  range = 
+  5 metrics
+    Wavefronts, VALUInsts, SALUInsts, SFetchInsts, FlatVMemInsts
+GPU distances[:40] = 4 5 5 5 5 5 5 5 4 4 5 5 5 3.40282e+38 5 5 5 5 5 5 5 5 4 5 5 5 5 5 6 5 5 5 5 6 5 5 5 5 5 5 
+GPU Elapsed Time : 622.133 (ms)
+
+ROCPRofiler: 99 contexts collected, output directory /tmp/rpl_data_240912_134455_422039/input0_results_240912_134455
+RPL: result dir '/tmp/rpl_data_240912_134455_422039/input1_results_240912_134455'
+ROCProfiler: input from "/tmp/rpl_data_240912_134455_422039/input1.xml"
+  gpu_index = 0
+  kernel = 
+  range = 
+  5 metrics
+    LDSInsts, FlatLDSInsts, GDSInsts, VALUUtilization, FetchSize
+GPU distances[:40] = 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 3.40282e+38 
+GPU Elapsed Time : 0.711203 (ms)
+
+ROCPRofiler: 18 contexts collected, output directory /tmp/rpl_data_240912_134455_422039/input1_results_240912_134455
+RPL: result dir '/tmp/rpl_data_240912_134455_422039/input2_results_240912_134455'
+ROCProfiler: input from "/tmp/rpl_data_240912_134455_422039/input2.xml"
+  gpu_index = 0
+  kernel = 
+  range = 
+  6 metrics
+    WriteSize, L2CacheHit, VWriteInsts, GPUBusy, VALUBusy, SALUBusy
+GPU distances[:40] = 4 4 4 4 5 4 4 4 4 4 5 5 4 3.40282e+38 4 4 5 4 4 4 4 4 4 4 4 5 4 5 5 4 5 4 5 6 5 4 4 4 5 5 
+GPU Elapsed Time : 625.325 (ms)
+
+ROCPRofiler: 94 contexts collected, output directory /tmp/rpl_data_240912_134455_422039/input2_results_240912_134455
+RPL: result dir '/tmp/rpl_data_240912_134455_422039/input3_results_240912_134455'
+ROCProfiler: input from "/tmp/rpl_data_240912_134455_422039/input3.xml"
+  gpu_index = 0
+  kernel = 
+  range = 
+  4 metrics
+    MemUnitStalled, WriteUnitStalled, LDSBankConflict, MemUnitBusy
+GPU distances[:40] = 3 4 4 4 4 4 4 4 4 4 4 4 4 3.40282e+38 4 4 4 3 4 4 4 4 4 4 4 4 4 4 5 4 4 4 4 5 5 4 4 4 4 5 
+GPU Elapsed Time : 620.146 (ms)
+
+ROCPRofiler: 93 contexts collected, output directory /tmp/rpl_data_240912_134455_422039/input3_results_240912_134455
+Profiling data corrupted: ' /tmp/rpl_data_240912_134455_422039/input0_results_240912_134455/results.txt /tmp/rpl_data_240912_134455_422039/input1_results_240912_134455/results.txt /tmp/rpl_data_240912_134455_422039/input2_results_240912_134455/results.txt /tmp/rpl_data_240912_134455_422039/input3_results_240912_134455/results.txt'
