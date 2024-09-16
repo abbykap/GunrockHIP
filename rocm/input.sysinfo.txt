@@ -100,21 +100,21 @@ Agent 2
   Pool Info:               
     Pool 1                   
       Segment:                 GLOBAL; FLAGS: FINE GRAINED        
-      Size:                    132111288(0x7dfdbb8) KB            
+      Size:                    132063852(0x7df226c) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
       Accessible by all:       TRUE                               
     Pool 2                   
       Segment:                 GLOBAL; FLAGS: KERNARG, FINE GRAINED
-      Size:                    132111288(0x7dfdbb8) KB            
+      Size:                    132063852(0x7df226c) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
       Accessible by all:       TRUE                               
     Pool 3                   
       Segment:                 GLOBAL; FLAGS: COARSE GRAINED      
-      Size:                    132111288(0x7dfdbb8) KB            
+      Size:                    132063852(0x7df226c) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
@@ -153,21 +153,21 @@ Agent 3
   Pool Info:               
     Pool 1                   
       Segment:                 GLOBAL; FLAGS: FINE GRAINED        
-      Size:                    132063856(0x7df2270) KB            
+      Size:                    132111292(0x7dfdbbc) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
       Accessible by all:       TRUE                               
     Pool 2                   
       Segment:                 GLOBAL; FLAGS: KERNARG, FINE GRAINED
-      Size:                    132063856(0x7df2270) KB            
+      Size:                    132111292(0x7dfdbbc) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
       Accessible by all:       TRUE                               
     Pool 3                   
       Segment:                 GLOBAL; FLAGS: COARSE GRAINED      
-      Size:                    132063856(0x7df2270) KB            
+      Size:                    132111292(0x7dfdbbc) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
@@ -206,21 +206,21 @@ Agent 4
   Pool Info:               
     Pool 1                   
       Segment:                 GLOBAL; FLAGS: FINE GRAINED        
-      Size:                    131007648(0x7cf04a0) KB            
+      Size:                    131007676(0x7cf04bc) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
       Accessible by all:       TRUE                               
     Pool 2                   
       Segment:                 GLOBAL; FLAGS: KERNARG, FINE GRAINED
-      Size:                    131007648(0x7cf04a0) KB            
+      Size:                    131007676(0x7cf04bc) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
       Accessible by all:       TRUE                               
     Pool 3                   
       Segment:                 GLOBAL; FLAGS: COARSE GRAINED      
-      Size:                    131007648(0x7cf04a0) KB            
+      Size:                    131007676(0x7cf04bc) KB            
       Allocatable:             TRUE                               
       Alloc Granule:           4KB                                
       Alloc Alignment:         4KB                                
@@ -230,7 +230,7 @@ Agent 4
 Agent 5                  
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-8d1f87b2e86dd0ce               
+  Uuid:                    GPU-ccfcbf72b73fb975               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -327,7 +327,7 @@ Agent 5
 Agent 6                  
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-31c1157fcb2d6cae               
+  Uuid:                    GPU-cfcdcaf59112cd93               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -424,7 +424,7 @@ Agent 6
 Agent 7                  
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-bffb20c5d1b6412a               
+  Uuid:                    GPU-aa5b7990d33c6c5a               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -521,7 +521,7 @@ Agent 7
 Agent 8                  
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-9339df4463d4136e               
+  Uuid:                    GPU-16e2ca424550b130               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -618,7 +618,7 @@ Agent 8
 Agent 9                  
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-bd47a9f8614c8404               
+  Uuid:                    GPU-3d62c5bae24dced4               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -715,7 +715,7 @@ Agent 9
 Agent 10                 
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-fa4812daea82a35c               
+  Uuid:                    GPU-e3957a12d4f53de1               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -812,7 +812,7 @@ Agent 10
 Agent 11                 
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-765809c5d75e7212               
+  Uuid:                    GPU-80947d31648e8e38               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    
@@ -909,7 +909,7 @@ Agent 11
 Agent 12                 
 *******                  
   Name:                    gfx90a                             
-  Uuid:                    GPU-84f8e89724b7b52c               
+  Uuid:                    GPU-b66cce704fb683f5               
   Marketing Name:          AMD Instinct MI250X                
   Vendor Name:             AMD                                
   Feature:                 KERNEL_DISPATCH                    

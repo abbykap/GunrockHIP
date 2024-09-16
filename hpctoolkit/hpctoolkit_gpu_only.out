@@ -1,0 +1,19 @@
+GPU distances[:40] = 17 17 15 16 18 18 19 17 17 16 16 16 16 16 16 16 16 17 17 17 17 17 16 16 16 17 17 17 17 17 17 17 12 12 11 12 12 12 14 15 
+GPU Elapsed Time : 33.1277 (ms)
+INFO: Using a pool of 56 threads to analyze binaries in a measurement directory
+INFO: Analyzing each large binary of >= 100000000 bytes in parallel using 16 threads
+INFO: Analyzing each small binary using 2 threads
+
+INFO: identifying load modules that need binary analysis
+
+ begin parallel analysis of CPU binary sssp (size = 1548008, threads = 2)
+ begin parallel analysis of CPU binary libroctracer64.so.4.1.0 (size = 216440, threads = 2)
+ begin parallel analysis of CPU binary libmonitor.so.0.0.0 (size = 263976, threads = 2)
+ begin parallel analysis of CPU binary libhpcrun.so.0.0.0 (size = 6458600, threads = 2)
+ begin parallel analysis of CPU binary libamdhip64.so.5.7.50701 (size = 23843288, threads = 2)
+   end parallel analysis of CPU binary libroctracer64.so.4.1.0 (Cache disabled by user)
+   end parallel analysis of CPU binary libmonitor.so.0.0.0 (Cache disabled by user)
+   end parallel analysis of CPU binary sssp (Cache disabled by user)
+   end parallel analysis of CPU binary libhpcrun.so.0.0.0 (Cache disabled by user)
+   end parallel analysis of CPU binary libamdhip64.so.5.7.50701 (Cache disabled by user)
+

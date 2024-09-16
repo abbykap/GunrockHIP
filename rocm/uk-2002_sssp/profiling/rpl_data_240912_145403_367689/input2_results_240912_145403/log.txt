@@ -1,0 +1,10 @@
+ROCProfiler: input from "/lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/uk-2002_sssp/profiling/rpl_data_240912_145403_367689/input2.xml"
+  gpu_index = 0
+  kernel = 
+  range = 
+  6 metrics
+    WriteSize, L2CacheHit, VWriteInsts, GPUBusy, VALUBusy, SALUBusy
+GPU distances[:40] = 19 19 17 18 20 20 21 19 19 18 18 18 18 18 18 18 18 19 19 19 19 19 18 18 18 19 19 19 19 19 19 19 13 13 12 13 13 13 14 15 
+GPU Elapsed Time : 115.545 (ms)
+
+ROCPRofiler: 241 contexts collected, output directory /lustre/orion/gen150/world-shared/abby-fall24/gunrockhip/gunrock-hip-develop/rocm/uk-2002_sssp/profiling/rpl_data_240912_145403_367689/input2_results_240912_145403
